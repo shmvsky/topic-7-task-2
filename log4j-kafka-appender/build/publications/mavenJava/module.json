@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.shmvsky",
+    "module": "log4j-kafka-appender",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "log4j-kafka-appender-1.0.0.jar",
+          "url": "log4j-kafka-appender-1.0.0.jar",
+          "size": 3381,
+          "sha512": "ef11425b0e3a67a79c9f10098b7dea2b775e568eb07381ffdbcdf5d7fbd9d96ea4f77213f843590e3171ce7c6ba3685a44ceea0be1e1a819ea0a00edfe6a383a",
+          "sha256": "8a7c8b2a103a571ed4cc57ad5253a043dccbf7aa0fe3da0846e035a7fb551189",
+          "sha1": "89678eea062f0dd80d86069b19b58cab77911db4",
+          "md5": "ab31c63b6d72f75ec8c17f82852ef9c2"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.kafka",
+          "module": "kafka-clients",
+          "version": {
+            "requires": "3.3.1"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-simple",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-core",
+          "version": {
+            "requires": "2.23.1"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.23.1"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-slf4j2-impl",
+          "version": {
+            "requires": "2.23.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "log4j-kafka-appender-1.0.0.jar",
+          "url": "log4j-kafka-appender-1.0.0.jar",
+          "size": 3381,
+          "sha512": "ef11425b0e3a67a79c9f10098b7dea2b775e568eb07381ffdbcdf5d7fbd9d96ea4f77213f843590e3171ce7c6ba3685a44ceea0be1e1a819ea0a00edfe6a383a",
+          "sha256": "8a7c8b2a103a571ed4cc57ad5253a043dccbf7aa0fe3da0846e035a7fb551189",
+          "sha1": "89678eea062f0dd80d86069b19b58cab77911db4",
+          "md5": "ab31c63b6d72f75ec8c17f82852ef9c2"
+        }
+      ]
+    }
+  ]
+}

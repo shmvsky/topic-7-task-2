@@ -1,0 +1,33 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'ru.shmvsky'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:3.3.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.3'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.23.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.23.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j2-impl', version: '2.23.1'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            groupId = 'ru.shmvsky'
+            artifactId = 'log4j-kafka-appender'
+            version = '1.0.0'
+
+        }
+    }
+}
